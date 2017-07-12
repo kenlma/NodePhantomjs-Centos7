@@ -14,7 +14,7 @@ USER root
 # PhantomJS
 #==============
 RUN yum update -y
-RUN yum -y install gcc gcc-c++ make flex bison gperf ruby \
+RUN yum -y install yum-plugin-ovl gcc gcc-c++ make flex bison gperf ruby \
 	openssl-devel freetype-devel fontconfig-devel libicu-devel sqlite-devel \
 	libpng-devel libjpeg-devel
 COPY phantomjs /usr/local/bin/phantomjs
