@@ -1,8 +1,11 @@
 # NodePhantomjs-Centos7
 
 selenium phantomjs node
+
 phantomjs version: 2.0.0
+
 fixed hub register bug
+
 base OS: centos 7.2
 
 Run with connect remote hub:
