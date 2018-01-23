@@ -16,8 +16,8 @@ USER root
 RUN yum update -y
 RUN rpm --rebuilddb; yum install -y yum-plugin-ovl
 RUN yum -y install gcc gcc-c++ make flex bison gperf ruby \
-	openssl-devel freetype-devel fontconfig-devel libicu-devel sqlite-devel \
-	libpng-devel libjpeg-devel ipa-gothic-fonts ipa-mincho-fonts
+	openssl-devel freetype-devel fontconfig fontconfig-devel libicu-devel sqlite-devel \
+	libpng-devel libjpeg-devel
 COPY phantomjs /usr/local/bin/phantomjs
 RUN chmod +x /usr/local/bin/phantomjs
 
